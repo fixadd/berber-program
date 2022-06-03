@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FEEE33C8-C5A8-4AF1-924F-C89F1C93A226}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>berber_program</RootNamespace>
+    <AssemblyName>berber-program</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cadisyon.cs" />
+    <Compile Include="ccalisanlar.cs" />
+    <Compile Include="cgenel.cs" />
+    <Compile Include="codeme.cs" />
+    <Compile Include="cpersonel.cs" />
+    <Compile Include="csiparis.cs" />
+    <Compile Include="curuncesitleri.cs" />
+    <Compile Include="curunler.cs" />
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmbill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbill.Designer.cs">
+      <DependentUpon>frmbill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcalisan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcalisan.Designer.cs">
+      <DependentUpon>frmcalisan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgiris.Designer.cs">
+      <DependentUpon>frmgiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkasaislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkasaislem.Designer.cs">
+      <DependentUpon>frmkasaislem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmenu.Designer.cs">
+      <DependentUpon>frmmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmraporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmraporlar.Designer.cs">
+      <DependentUpon>frmraporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsiparis.Designer.cs">
+      <DependentUpon>frmsiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmurunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmurunler.Designer.cs">
+      <DependentUpon>frmurunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odeme.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmbill.resx">
+      <DependentUpon>frmbill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcalisan.resx">
+      <DependentUpon>frmcalisan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgiris.resx">
+      <DependentUpon>frmgiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkasaislem.resx">
+      <DependentUpon>frmkasaislem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmenu.resx">
+      <DependentUpon>frmmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmraporlar.resx">
+      <DependentUpon>frmraporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsiparis.resx">
+      <DependentUpon>frmsiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmurunler.resx">
+      <DependentUpon>frmurunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\181706.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1087051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-application-exit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App-login-manager-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-preferences-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-turn-left-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-285081411.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girirs - Kopya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krboga2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-keyhole-1 - Kopya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012-id-card - Kopya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-security-pad-key-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Science-Plus-Minus-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEO-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinFoto_kopya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinFoto_kopya_dolu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devils-lake-t0u5orz.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
